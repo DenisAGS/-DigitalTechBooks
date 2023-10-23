@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0px -8px;
+    background: #ffffff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.secciones {
+    margin: 65px 0 0 0;
+}
+
+.descripcion-acerca {
+    background-color: #FFFFFF;
+}
+
+.descripcion-acerca h1 {
+    color: #003E61;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+.container-descripcion-acerca {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container-descripcion-acerca img {
+    max-width: 50%;
+    height: 30em;
+    padding: 20px;
+}
+
+.container-descripcion-acerca p {
+    flex: 1;
+    padding: 30px 20px 10px 40px;
+    color: #515656;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*Mision y vision*/
+.vision-mision{
+    background-color: #046B6B;
+    height: auto;
+    width: auto;
+    padding: 40px 30px;
+}
+
+.container-mision-vision {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: auto;
+    height: 237px; 
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.container-mision-vision p {
+    flex: 1;
+    padding: 30px 20px 25px 40px;
+    color: #ffffff;
+    line-height: normal;
+    text-align: justify;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.image-container .text-overlay {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    background-color:transparent; 
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.image-container .text-overlay p {
+    margin: 0;
+    font-size: 60px;
+}
+
+/*Detalles*/
+.detalles{
+    padding: 40px 0px;
+    background-color: #FFFFFF;
+}
+
+.container-detalles {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.container-detalles img {
+    max-width: 100%;
+    width: auto;
+    height: 237px; 
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.container-detalles p {
+    flex: 1;
+    padding: 30px 20px 25px 40px;
+    color: #585858;
+    line-height: normal;
+    text-align: justify;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container-detalles h4{
+    padding: 0px 25px;
+    margin-left: 20px;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-detalles h4{
+    color: #066;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Diseño del formulario*/
+
+.formulario{
+    background-color: #D9D9D9;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url("../../assets/images/acerca-landing/form-libros.png");
+    height: auto;
+    padding-bottom: 20px;
+    width: 1330px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.formulario h1{
+    color: #003E61;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+form{
+    margin: 10px;
+}
+.formulario label{
+    margin: 20px 10px 0px 20px ;
+}
+
+.formulario input{
+    width: 18em;
+    border-radius: 5px;
+    border: none;
+}
+
+.text-detalles{
+    margin-top: 20px;
+    display: flex;
+}
+
+.text-detalles textarea{
+    border-radius: 5px;
+    background: rgba(254, 249, 243, 0.84);
+    border: none;
+}
+
+@media (max-width: 860px) {
+    .descripcion-acerca h1{
+        padding-bottom: 10px;
+        line-height: normal;
+    }
+
+    .container-descripcion-acerca p{
+        margin: 10px;
+    }
+
+    .container-descripcion-acerca img {
+        display: none;
+    }
+}

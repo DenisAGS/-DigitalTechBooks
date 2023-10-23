@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>{{title}}</h1>
+            <form (submit)="login()">
+                <div class="input-group">
+                    <input for="email" type="email" id="email" placeholder="Correo Electronico" [(ngModel)]="email" name="email" required>
+                    <input for="password" type="password" id="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required>
+                    <a href="">Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    
+        <div class="registro-container">
+            <h2>¡Te damos la bienvenida!</h2>
+        </div>
+    </div>
+</body>
+
+</html>
