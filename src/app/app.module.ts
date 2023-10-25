@@ -12,6 +12,8 @@ import { ServiciosLandingComponent } from './servicios-landing/servicios-landing
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './registro/registro.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuUsuarioComponent } from './menu-usuario/menu-usuario.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { FormsModule } from '@angular/forms';
     LandingComponent,
     ServiciosLandingComponent,
     InicioSesionComponent,
-    RegistroComponent
+    RegistroComponent,
+    MenuUsuarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

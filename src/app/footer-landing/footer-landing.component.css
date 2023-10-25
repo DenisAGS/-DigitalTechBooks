@@ -12,7 +12,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1364px;
     width: 100%;
     align-items: center;
     color: #434042;
@@ -28,8 +27,7 @@
   .footer-bottom {
     text-align: center;
     background-color: #878585;
-    padding: 13
-    px 0px;
+    padding: 13px 0px;
     margin: 0px 0px -30px;
     box-sizing: border-box;
   }

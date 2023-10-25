@@ -5,6 +5,8 @@ import { CatalogoLandingComponent } from './catalogo-landing/catalogo-landing.co
 import { ServiciosLandingComponent } from './servicios-landing/servicios-landing.component';
 import { AcercaLandingComponent } from './acerca-landing/acerca-landing.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { RegistroComponent } from './registro/registro.component';
+import { MenuUsuarioComponent } from './menu-usuario/menu-usuario.component';
 
 const routes: Routes = [
   {
@@ -23,8 +25,14 @@ const routes: Routes = [
     path: 'iniciar-sesion',
     component: InicioSesionComponent
   },
-
-
+  {
+    path: 'registro',
+    component: RegistroComponent
+  },
+  {
+    path: 'menu',
+    component: MenuUsuarioComponent
+  }
 ];
 
 @NgModule({

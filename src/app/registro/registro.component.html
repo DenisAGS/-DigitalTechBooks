@@ -1,1 +1,43 @@
-<p>registro works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="iniciar-container">
+            <h2>¡Bienvenido de nuevo!</h2>
+            <span>Ingresa con tus datos para desbloquear todas las características del sitio.</span>
+            <button> <a routerLink="/iniciar-sesion">Iniciar sesion</a></button>
+        </div>
+        <div class="registro-container">
+            <h1>{{title}}</h1>
+            <form (submit)="registro()">
+                <div class="input-group">
+                    <input for="nombre" type="texto" id="nombre" placeholder="Nombre  completo" [(ngModel)]="nombre" name="nombre" required>
+                    <input for="email" type="email" id="email" placeholder="Correo Electronico" [(ngModel)]="email" name="email" required>
+                    <input for="password" type="password" id="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required>
+                    <input for="confirmarPassword" type="password" id="password" placeholder="Confirmar contraseña" [(ngModel)]="confirmarPassword" name="confirmarPassword" required>
+                </div>
+                <div class="group-btn">
+                    <button type="submit">Registrarse</button>
+                    <span>Registrarse con otros</span>
+                </div>
+                <div class="social-login">
+                    <a href="URL_DE_INICIO_DE_SESION_DE_GOOGLE" class="social-button google">
+                      <img src="../../assets/images/login/google.png" alt="Iniciar sesión con Google">
+                    </a>
+                    <a href="URL_DE_INICIO_DE_SESION_DE_FACEBOOK" class="social-button facebook">
+                      <img src="../../assets/images/login/facebook.png" alt="Iniciar sesión con Facebook">
+                    </a>
+                  </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

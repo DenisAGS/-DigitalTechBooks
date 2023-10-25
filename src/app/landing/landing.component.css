@@ -41,6 +41,8 @@ header {
     height: auto;
     background-color: #ffffff;
     padding-bottom: 50px;
+    justify-content: center;
+    width: 100%;
 }
 
 .texto-inicio {
@@ -231,8 +233,10 @@ button {
 /*Generos*/
 
 .ContGeneros {
-    width: auto;
+    width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
 }
 
