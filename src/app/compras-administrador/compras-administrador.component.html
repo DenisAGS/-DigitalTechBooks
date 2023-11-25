@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-usuario></app-menu-usuario>
+    </aside>
+
+<div class="table-info">
+
+    <div class="acciones">
+        <h5>Lista de compras</h5>
+        <div class="space">
+            <button (click)="reloadTable()">
+              <i class="fas fa-sync-alt"></i>
+            </button>
+        </div>
+    </div>
+
+<table border="1">
+    <thead>
+      <tr>
+        <th>ISBN</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Tipo</th>
+        <th>Descripcion</th>
+        <th>Fecha de compra</th>
+        <th>Categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lista of listas">
+        <td>{{ lista.isbn }}</td>
+        <td>{{ lista.titulo }}</td>
+        <td>        
+            <div style="display: flex; align-items: center;">
+                <img [src]="lista.autorImage" alt="{{ lista.autor }}'s image" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+                <span>{{ lista.autor }}</span>
+          </div></td>
+        <td>{{ lista.tipo }}</td>
+        <td>{{ lista.descripcion }}</td>
+        <td>{{ lista.compraDate | date }}</td>
+        <td>{{ lista.categoria }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
+</body>
+</html>

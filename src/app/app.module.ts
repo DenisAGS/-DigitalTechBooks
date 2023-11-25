@@ -14,6 +14,15 @@ import { RegistroComponent } from './registro/registro.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuUsuarioComponent } from './menu-usuario/menu-usuario.component';
+import { DashboardUsuarioComponent } from './dashboard-usuario/dashboard-usuario.component';
+import { HeaderDashboardComponent } from './header-dashboard/header-dashboard.component';
+import { EditarCuentaComponent } from './editar-cuenta/editar-cuenta.component';
+import { MiListaUsuarioComponent } from './mi-lista-usuario/mi-lista-usuario.component';
+import { ReservaUsuarioComponent } from './reserva-usuario/reserva-usuario.component';
+import { CatalogoAdministradorComponent } from './catalogo-administrador/catalogo-administrador.component';
+import { ComprasAdministradorComponent } from './compras-administrador/compras-administrador.component';
+import { ServiciosAdministradorComponent } from './servicios-administrador/servicios-administrador.component';
+import { ReservaAdministradorComponent } from './reserva-administrador/reserva-administrador.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +35,16 @@ import { MenuUsuarioComponent } from './menu-usuario/menu-usuario.component';
     ServiciosLandingComponent,
     InicioSesionComponent,
     RegistroComponent,
-    MenuUsuarioComponent
+    MenuUsuarioComponent,
+    DashboardUsuarioComponent,
+    HeaderDashboardComponent,
+    EditarCuentaComponent,
+    MiListaUsuarioComponent,
+    ReservaUsuarioComponent,
+    CatalogoAdministradorComponent,
+    ComprasAdministradorComponent,
+    ServiciosAdministradorComponent,
+    ReservaAdministradorComponent
   ],
   imports: [
     BrowserModule,

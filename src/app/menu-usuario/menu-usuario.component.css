@@ -97,6 +97,11 @@ aside{
     display: block;
 }
 
+.main-sidebar .nav-link .hidden-text:hover{
+    color: #86f0fc;
+}
+
+
 .main-sidebar:hover .cerrar-sesion{
     margin-top: 20%;
     color: #e2e2e2;

@@ -7,18 +7,23 @@ import { Component } from '@angular/core';
 })
 export class InicioSesionComponent {
   title = 'Iniciar sesion';
-  email = '';
-  password = '';
- 
-  // Method for logging in
+  username: string = '';
+  password: string = '';
+  placeholderText: string = 'Introduce tu nombre de usuario';
+  passwordVisible = false;
+
+  togglePasswordVisibility() {
+    this.passwordVisible = !this.passwordVisible;
+    const passwordInput = document.getElementById('password') as HTMLInputElement;
+    passwordInput.type = this.passwordVisible ? 'text' : 'password';
+  }
  
   login() {
  
-     console.log('Logging in...');
- 
-     console.log('Email:', this.email);
- 
-     console.log('Password:', this.password);
- 
+    if (this.username === 'usuarioValido' && this.password === 'contrasenaValida') {
+      this.placeholderText = 'Usuario autenticado. No se puede modificar.';
+    } else {
+      this.placeholderText = 'Usuario no válido. Introduce un nombre de usuario válido.';
+    }
   }
 }

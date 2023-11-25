@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-usuario></app-menu-usuario>
+    </aside>
+
+    <div class="container-dashboard">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar..." [(ngModel)]="query" (input)="onSearch()" />
+        </div> 
+
+        <section class="content-espera">
+            <div class="content-book">
+                <img src="../../assets/images/catalogo-landing/libros/coraline.png" alt="">
+                <div class="text-book">
+                    <span>Tu ultima lectura te espera</span>
+                    <button>Seguir leyendo</button>
+                </div>
+            </div>
+            <div class="content-book">
+                <img src="../../assets/images/catalogo-landing/libros/filosofia.png" alt="">
+                <div class="text-book">
+                    <span>Tu ultima lectura te espera</span>
+                    <button>Seguir leyendo</button>
+                </div>
+            </div>
+            <div class="content-book">
+                <img src="../../assets/images/catalogo-landing/libros/quinto.png" alt="">
+                <div class="text-book">
+                    <span>Tu ultima lectura te espera</span>
+                    <button>Seguir leyendo</button>
+                </div>
+            </div>
+        </section>
+
+          <section class="recomendacion-libros">
+            <h1>Recomendaciones</h1>
+            <div class="recomendaciones">                <div class="libros">
+                    <img src="../../assets/images/catalogo-landing/libros/quinto.png" alt="">
+                    <span>Filosofia felina</span>
+                </div>
+                <div class="libros">
+                    <img src="../../assets/images/catalogo-landing/libros/filosofia.png" alt="">
+                    <span>Filosofia felina</span>
+                </div>
+                <div class="libros">
+                    <img src="../../assets/images/catalogo-landing/libros/tres meses.png" alt="">
+                    <span>Filosofia felina</span>
+                </div>
+                <div class="libros">
+                    <img src="../../assets/images/catalogo-landing/libros/coraline.png" alt="">
+                    <span>Filosofia felina</span>
+                </div>
+                <div class="libros">
+                    <img src="../../assets/images/catalogo-landing/libros/filosofia.png" alt="">
+                    <span>Filosofia felina</span>
+                </div>
+            </div>
+          </section>
+    </div>
+</body>
+</html>

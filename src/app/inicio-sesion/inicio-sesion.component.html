@@ -13,12 +13,17 @@
             <h1>{{title}}</h1>
             <form (submit)="login()">
                 <div class="input-group">
-                    <input for="email" type="email" id="email" placeholder="Correo Electronico" [(ngModel)]="email" name="email" required>
-                    <input for="password" type="password" id="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required>
+                    <input for="username" type="username" id="username" placeholder="Usuario" [(ngModel)]="username" name="username" required>
+                    <div class="password-input-container">
+                        <input type="{{ passwordVisible ? 'text' : 'password' }}" id="password" name="password" placeholder="Contraseña" class="password-input">
+                        <span class="toggle-password" (click)="togglePasswordVisibility()">
+                            <i class="fas" [class.fa-eye]="!passwordVisible" [class.fa-eye-slash]="passwordVisible"></i>
+                        </span>
+                    </div>                    
                     <a href="">Olvidaste tu contraseña?</a>
                 </div>
                 <div class="group-btn">
-                    <button type="submit">Iniciar sesion</button>
+                    <button (click)="login()" type="submit">Iniciar sesion</button>
                     <span>Iniciar sesion con otros</span>
                 </div>
                 <div class="social-login">
