@@ -17,6 +17,8 @@ import { CatalogoAdministradorComponent } from './catalogo-administrador/catalog
 import { ComprasAdministradorComponent } from './compras-administrador/compras-administrador.component';
 import { ServiciosAdministradorComponent } from './servicios-administrador/servicios-administrador.component';
 import { ReservaAdministradorComponent } from './reserva-administrador/reserva-administrador.component';
+import { DashboardAdministradorComponent } from './dashboard-administrador/dashboard-administrador.component';
+import { ComprasUsuarioComponent } from './compras-usuario/compras-usuario.component';
 
 const routes: Routes = [
   {
@@ -78,6 +80,14 @@ const routes: Routes = [
   {
     path: 'reserva-administrador',
     component: ReservaAdministradorComponent
+  },
+  {
+    path: 'dashboard-administrador',
+    component: DashboardAdministradorComponent
+  },
+  {
+    path: 'compras-usuario',
+    component: ComprasUsuarioComponent
   },
 
 ];

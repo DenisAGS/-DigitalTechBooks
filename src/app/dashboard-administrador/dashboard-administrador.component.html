@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-administrador></app-menu-administrador>
+    </aside>
+
+<div class="table-info">
+
+    <div class="acciones">
+        <span>Numero de nuevos registros de usuarios: {{ numeroRegistros }}</span>
+    </div>
+
+<table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido paterno</th>
+        <th>Apellido materno</th>
+        <th>Ciudad</th>
+        <th>Correo electronico</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lista of listas">
+        <td>{{ lista.nombre }}</td>
+        <td>{{ lista.apellidoMaterno }}</td>
+        <td>{{ lista.apellidoPaterno }}</td>
+        <td>{{ lista.ciudad }}</td>
+        <td>{{ lista.correo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
+</body>
+</html>
