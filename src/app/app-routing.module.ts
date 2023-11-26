@@ -68,10 +68,6 @@ const routes: Routes = [
     component: CatalogoAdministradorComponent
   },
   {
-    path: 'catalogo-administrador',
-    component: CatalogoAdministradorComponent
-  },
-  {
     path: 'compras-administrador',
     component: ComprasAdministradorComponent
   },
