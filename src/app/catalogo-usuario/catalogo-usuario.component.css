@@ -1,11 +1,15 @@
 .table-info{
     justify-content: center;
     align-items: center;
-    margin-left: 7.5%;
+    margin-left: 4%;
 }
 
+.space{
+  margin-top: -30px;
+  margin-left: 7%;
+}
 
-h5{
+ h2{
     color: #515656;
     font-size: 30px;
     font-style: normal;
@@ -13,47 +17,30 @@ h5{
     line-height: normal;
 }
 
-.title-sugerencias{
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
+#categoria{
+  font-size: 15px;
+  justify-content: center;
+  width: 80px;
+  margin-left: 20px;
+}
+
+.opciones button{
+  margin-left: 10px;
+  border-radius: 5px;
+  background: linear-gradient(267deg, #016969 1.98%, #00F0FF 97.97%);
+  border: none;
+  width: 75px;
+  height: 27px;
+  flex-shrink: 0;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .table-container {
     margin-top: -20px;
     max-height: 170px; 
     overflow-y: auto;
-  }
-  
-table {
-    margin-top: -2px;
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-  }
-
-  thead {
-    background-color: rgb(207, 207, 207);
-    border-bottom: 1px #707070;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-
-  th{
-    border: 1px solid #ddd;
-    padding: 8px;
-    color: #013E60;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-  }
-
-  td{
-    border: 1px solid #ddd;
-    padding: 8px;
   }
 
   .acciones{
@@ -75,8 +62,8 @@ table {
     width: 128px;
     height: 36px;
     flex-shrink: 0;
-    border-radius: 10px;
-    background: linear-gradient(267deg, #00CF53 7.98%, #00D9A5 97.97%);
+    border-radius: 5px;
+    background: linear-gradient(267deg, #00CFDC 1.98%, #00FFC2 97.97%, #00E8B0 97.97%);
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
@@ -88,15 +75,18 @@ table {
   }
 
   .sugerencias-book{
-    margin-top: -44px;
+    margin-top: 44px;
     flex-wrap: wrap;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
     justify-content: center;
   }
 
   .book img{
     margin-right: 10px;
     width: 110px;
+    height: 170px;
   }
 
   .text-book{
@@ -122,6 +112,10 @@ table {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+  }
+
+  .text-book p{
+    font-size: 10px;
   }
 
   .text-book button{

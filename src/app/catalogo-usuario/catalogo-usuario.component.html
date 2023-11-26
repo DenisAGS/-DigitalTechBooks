@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalTechBooks</title>
+</head>
+
+<body>
+    <header>
+        <app-header-dashboard></app-header-dashboard>
+    </header>
+    <aside>
+        <app-menu-usuario></app-menu-usuario>
+    </aside>
+
+<div class="space">
+    <h2>Catalogo</h2>
+
+    <div class="opciones">
+        <label class="categoria-etiqueta"  for="categoria">Filtrar por categoría:</label>
+        <select id="categoria" [(ngModel)]="categoriaSeleccionada">
+          <option value="todas">Todas</option>
+          <option value="ficcion">Ficcion</option>
+          <option value="poesia">Poesia</option>
+          <option value="teatro">Teatro</option>
+          <option value="ciencia">Ciencia</option>
+          <option value="historia">Historia</option>
+          <option value="misterio">Misterio</option>
+        </select>
+        <button (click)="filtrarLibros()">Filtrar</button>
+      </div>
+      
+      <div class="table-info">
+      
+        <div class="sugerencias">
+          <div class="sugerencias-book">
+            <div class="book" *ngFor="let libro of librosFiltrados">
+              <img [src]="libro.imagen" alt="{{ libro.titulo }}">
+              <div class="text-book">
+                <h3>{{ libro.titulo }}</h3>
+                <span>{{ libro.autor }}</span>
+                <p>{{ libro.descripcion }}</p>
+                <div class="btn-comprar-book">
+                  <button (click)="comprarLibro(libro)">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+</div>
+</body>
+
+</html>

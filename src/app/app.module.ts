@@ -26,6 +26,8 @@ import { ReservaAdministradorComponent } from './reserva-administrador/reserva-a
 import { MenuAdministradorComponent } from './menu-administrador/menu-administrador.component';
 import { DashboardAdministradorComponent } from './dashboard-administrador/dashboard-administrador.component';
 import { ComprasUsuarioComponent } from './compras-usuario/compras-usuario.component';
+import { ServiciosUsuarioComponent } from './servicios-usuario/servicios-usuario.component';
+import { CatalogoUsuarioComponent } from './catalogo-usuario/catalogo-usuario.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ComprasUsuarioComponent } from './compras-usuario/compras-usuario.compo
     ReservaAdministradorComponent,
     MenuAdministradorComponent,
     DashboardAdministradorComponent,
-    ComprasUsuarioComponent
+    ComprasUsuarioComponent,
+    ServiciosUsuarioComponent,
+    CatalogoUsuarioComponent
   ],
   imports: [
     BrowserModule,
